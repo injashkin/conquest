@@ -6,10 +6,12 @@
     <meta name="description" content="My Conquest" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <!--++++++++++++++++++++++++++++++++++++++++++-->
     <header class="header container">
       <div>
         <object type="image/svg+xml" data="./image/logo.svg">
@@ -41,33 +43,105 @@
       <div class="hero-main">
         <div class="hero__group">
           <div class="hero__header-main">
-            <div class="line line_bg"></div>
-            <div class="hero__header_kiker">Весна/Лето 2019</div>
-            <div class="hero__header_heading">Коллекция</div>
-            <div class="hero__descript">
-              Швейцарские часы в наличии в Москве и с доставкой по всему миру
-            </div>
+            <hgroup class="hero__hgroup">
+              <h1 class="hero__header_kiker">Весна/Лето 2019</h1>
+              <p class="hero__header_heading">Коллекция</p>
+              <div class="line line_hgroup"></div>
+            </hgroup>
           </div>
-          <a class="button hero__button">Смотреть каталог</a>
+          <div class="hero__descript">
+            Швейцарские часы в наличии в Москве <br />
+            и с доставкой по всему миру
+          </div>
+          <a class="button" href="/">Смотреть каталог</a>
         </div>
         <div class="ellipse-main">
           <img class="watch-main" src="./image/watch_main.png" alt="Часы" />
           <div class="ellipse"></div>
           <div class="price-main">
-            <div class="line line_bg"></div>
             <div class="price-main__price">22 000</div>
             <object
               type="image/svg+xml"
               data="./image/ruble.svg"
               class="ruble"
             ></object>
+            <div class="line"></div>
+            <!-- <hr width="30px" size="1" color="8B8371" /> -->
           </div>
           <div class="diameter">
+            <div class="line"></div>
             <div class="diameter__text">28 мм диаметр</div>
-            <div class="line line_bg"></div>
           </div>
         </div>
       </div>
     </div>
+    <!--++++++++++++++++++++++++++++++++++++++++++-->
+    <div class="products container">
+      <h2 class="products__header">Популярные модели</h2>
+      <div class="see-all">Смотреть все</div>
+      <div class="products__watches">
+        <div class="products__card">
+          <h3>RADO</h3>
+          <div class="price-group">
+            <div class="price">65 300</div>
+            <object
+              type="image/svg+xml"
+              data="./image/ruble.svg"
+              class="ruble"
+            ></object>
+          </div>
+          <div class="products__gradient">
+            <div class="products__background">
+              <img src="./image/watch_1.png" />
+            </div>
+          </div>
+          <div class="more-group">
+            <div class="line line_sm"></div>
+            <div class="more">Подробнее</div>
+          </div>
+        </div>
+        <div class="products__card">
+          <h3>BVLGARI</h3>
+          <div class="price-group">
+            <div class="price">81 700</div>
+            <object
+              type="image/svg+xml"
+              data="./image/ruble.svg"
+              class="ruble"
+            ></object>
+          </div>
+          <div class="products__gradient">
+            <div class="products__background">
+              <img src="./image/watch_3.png" />
+            </div>
+          </div>
+          <div class="more-group">
+            <div class="line line_sm"></div>
+            <div class="more">Подробнее</div>
+          </div>
+        </div>
+        <div class="products__card">
+          <h3>BVLGARI</h3>
+          <div class="price-group">
+            <div class="price">72 700</div>
+            <object
+              type="image/svg+xml"
+              data="./image/ruble.svg"
+              class="ruble"
+            ></object>
+          </div>
+          <div class="products__gradient">
+            <div class="products__background">
+              <img src="./image/watch_4.png" />
+            </div>
+          </div>
+          <div class="more-group">
+            <div class="line line_sm"></div>
+            <div class="more">Подробнее</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--++++++++++++++++++++++++++++++++++++++++++-->
   </body>
 </html>

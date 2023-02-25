@@ -26,15 +26,24 @@
           <li><a href="/">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header__icons">
-        <div class="header__icon">
-          <object type="image/svg+xml" data="./image/loupe.svg"></object>
+      <div class="header__icons-group">
+        <div>
+          <svg class="header__icon">
+            <use xlink:href="./image/sprite.svg#loupe"></use>
+          </svg>
         </div>
-        <div class="header__icon">
-          <object type="image/svg+xml" data="./image/heart.svg"></object>
+        <div class="header__heart-group">
+          <div class="header__like">
+            <div>1</div>
+          </div>
+          <svg class="header__icon">
+            <use xlink:href="./image/sprite.svg#heart"></use>
+          </svg>
         </div>
-        <div class="header__icon">
-          <object type="image/svg+xml" data="./image/cart.svg"></object>
+        <div>
+          <svg class="header__icon">
+            <use xlink:href="./image/sprite.svg#cart"></use>
+          </svg>
         </div>
       </div>
     </header>
@@ -44,7 +53,7 @@
         <div class="hero__group">
           <div class="hero__header-main">
             <hgroup class="hero__hgroup">
-              <h1 class="hero__header_kiker">Весна/Лето 2019</h1>
+              <h1>Весна/Лето 2019</h1>
               <p class="hero__header_heading">Коллекция</p>
               <div class="line line_hgroup"></div>
             </hgroup>
@@ -59,14 +68,8 @@
           <img class="watch-main" src="./image/watch_main.png" alt="Часы" />
           <div class="ellipse"></div>
           <div class="price-main">
-            <div class="price-main__price">22 000</div>
-            <object
-              type="image/svg+xml"
-              data="./image/ruble.svg"
-              class="ruble"
-            ></object>
+            <div class="price-main__price ruble ruble_bg">22 000</div>
             <div class="line"></div>
-            <!-- <hr width="30px" size="1" color="8B8371" /> -->
           </div>
           <div class="diameter">
             <div class="line"></div>
@@ -83,12 +86,7 @@
         <div class="products__card">
           <h3>RADO</h3>
           <div class="price-group">
-            <div class="price">65 300</div>
-            <object
-              type="image/svg+xml"
-              data="./image/ruble.svg"
-              class="ruble"
-            ></object>
+            <div class="price ruble">65 300</div>
           </div>
           <div class="products__gradient">
             <div class="products__background">
@@ -103,12 +101,7 @@
         <div class="products__card">
           <h3>BVLGARI</h3>
           <div class="price-group">
-            <div class="price">81 700</div>
-            <object
-              type="image/svg+xml"
-              data="./image/ruble.svg"
-              class="ruble"
-            ></object>
+            <div class="price ruble">81 700</div>
           </div>
           <div class="products__gradient">
             <div class="products__background">
@@ -123,12 +116,7 @@
         <div class="products__card">
           <h3>BVLGARI</h3>
           <div class="price-group">
-            <div class="price">72 700</div>
-            <object
-              type="image/svg+xml"
-              data="./image/ruble.svg"
-              class="ruble"
-            ></object>
+            <div class="price ruble">72 700</div>
           </div>
           <div class="products__gradient">
             <div class="products__background">
@@ -174,7 +162,6 @@
     </div>
 
     <!--++++++++++++++++++++++++++++++++++++++++++-->
-
     <div class="subscribe">
       <div class="subscribe__group">
         <h2 class="subscribe__header">Следите за нашими новостями</h2>
@@ -184,22 +171,19 @@
         </p>
         <div class="socials">
           <div class="instagram">
-            <object
-              type="image/svg+xml"
-              data="./image/instagram_icon.svg"
-            ></object>
+            <svg class="socials-icon">
+              <use xlink:href="./image/sprite.svg#instagram"></use>
+            </svg>
           </div>
           <div class="facebook">
-            <object
-              type="image/svg+xml"
-              data="./image/facebook_icon.svg"
-            ></object>
+            <svg class="socials-icon">
+              <use xlink:href="./image/sprite.svg#facebook"></use>
+            </svg>
           </div>
           <div class="twitter">
-            <object
-              type="image/svg+xml"
-              data="./image/twitter_icon.svg"
-            ></object>
+            <svg class="socials-icon">
+              <use xlink:href="./image/sprite.svg#twitter"></use>
+            </svg>
           </div>
         </div>
       </div>
@@ -235,25 +219,25 @@
             Ваш браузер не поддерживает SVG
           </object>
         </div>
-          <a href="tel:84994504797">8 (499) 450-47-97</a>
-          <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
+        <a href="tel:84994504797">8 (499) 450-47-97</a>
+        <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
       </div>
       <div class="about">
-        <div>О компании</div>
+        <h4>О компании</h4>
         <a href="/">Наши магазины</a>
         <a href="/">Вакансии</a>
         <a href="/">Сертификаты</a>
         <a href="/">Отзывы</a>
       </div>
       <div class="for-buyers">
-        <div>Покупателям</div>
+        <h4>Покупателям</h4>
         <a href="/">Каталог товаров</a>
         <a href="/">Как заказать?</a>
         <a href="/">FAQ</a>
         <a href="/">Корпоративным клиентам</a>
       </div>
       <div>
-        <div>Оплата и доставка</div>
+        <h4>Оплата и доставка</h4>
         <a href="/">Способы оплаты</a>
         <a href="/">Время доставки</a>
         <a href="/">Гарантии и ремонт</a>

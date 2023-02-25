@@ -27,6 +27,24 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+
+p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+}
+
 a {
   text-decoration: none;
   color: var(--main-color);
@@ -269,7 +287,7 @@ ul[class] {
 
 .price-group {
   display: flex;
-} 
+}
 
 .products__watches .price {
   font-family: "Prata";
@@ -317,4 +335,121 @@ ul[class] {
   font-size: 16px;
   line-height: 21px;
   color: #1b1a17;
+}
+
+/* Banner */
+
+.banner {
+  display: flex;
+}
+
+.banner__background-1 {
+  position: relative;
+  background: #f7f5ef;
+  width: 468px;
+}
+
+.banner__photo {
+  position: absolute;
+  top: 52px;
+  left: 177px;
+}
+
+.banner__background-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fdfdfb;
+  padding-top: 140px;
+  width: 100%;
+}
+
+.banner__group {
+  margin-left: 200px;
+}
+
+.banner__descript {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #444240;
+
+  padding: 38px 0 45px;
+  max-width: 376px;
+}
+
+.button_banner {
+  background: #d4b098;
+}
+
+.banner__pagination {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin: 103px 0 21px 84px;
+}
+
+.arrow {
+  width: 10px;
+  height: 10px;
+  border-left: 0.5px solid #1b1a17;
+  border-bottom: 0.5px solid #1b1a17;
+  rotate: 45deg;
+}
+
+.banner__number {
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: rgba(27, 26, 23, 0.82);
+  padding: 0 20px;
+}
+
+.arrow_right {
+  transform: rotate(180deg);
+}
+
+/* ================== Subscribe ================ */
+
+.subscribe {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: 81px auto 90px;
+}
+
+.subscribe__group {
+  margin-bottom: 62px;
+}
+
+.subscribe__descript {
+  max-width: 376px;
+  margin: 40px 0 119px;
+}
+
+.socials {
+  display: flex;
+}
+
+.socials > :nth-last-child(n + 2) {
+  margin-right: 18px;
+}
+
+.subscribe__photo-group {
+  display: flex;
+}
+
+.subscribe__photo-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subscribe__photo-3 {
+  margin-left: 10px;
 }

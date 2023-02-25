@@ -453,3 +453,39 @@ ul[class] {
 .subscribe__photo-3 {
   margin-left: 10px;
 }
+
+/* ================== Footer ================ */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: rgba(255, 255, 255, 0.75);
+  background: #444240;
+  padding: 79px 0 67px;
+}
+
+.footer__logo {
+  color: #ffffff;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > div > div {
+  margin-bottom: 33px;
+}
+
+.footer a {
+  margin-bottom: 15px;
+  color: inherit;
+}
+
+

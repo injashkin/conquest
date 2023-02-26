@@ -11,19 +11,24 @@
   </head>
 
   <body>
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- =========== Header =========== -->
+
     <header class="header container">
-      <div>
-        <object type="image/svg+xml" data="./image/logo.svg">
+      <div class="header__logo">
+        <object type="image/svg+xml" data="./image/logo-1.svg">
           Ваш браузер не поддерживает SVG
         </object>
+        <div class="logo__text logo__text_header">CONQUEST</div>
       </div>
       <nav>
-        <ul class="header__menu">
-          <li><a href="/">Каталог</a></li>
-          <li><a href="/">Акции</a></li>
-          <li><a href="/">Доставка</a></li>
-          <li><a href="/">Контакты</a></li>
+        <input id="menu__toggle" class="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle"><span> </span></label>
+
+        <ul class="header__menu menu__box">
+          <li><a class="menu__item" href="/">Каталог</a></li>
+          <li><a class="menu__item" href="/">Акции</a></li>
+          <li><a class="menu__item" href="/">Доставка</a></li>
+          <li><a class="menu__item" href="/">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__icons-group">
@@ -47,15 +52,17 @@
         </div>
       </div>
     </header>
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+
+    <!-- =========== Hero =========== -->
+
     <div class="hero">
       <div class="hero-main">
         <div class="hero__group">
           <div class="hero__header-main">
             <hgroup class="hero__hgroup">
+              <div class="line line_hgroup"></div>
               <h1>Весна/Лето 2019</h1>
               <p class="hero__header_heading">Коллекция</p>
-              <div class="line line_hgroup"></div>
             </hgroup>
           </div>
           <div class="hero__descript">
@@ -78,7 +85,9 @@
         </div>
       </div>
     </div>
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+
+    <!-- =========== Products =========== -->
+
     <div class="products container">
       <h2 class="products__header">Популярные модели</h2>
       <div class="see-all">Смотреть все</div>
@@ -130,17 +139,16 @@
         </div>
       </div>
     </div>
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+
+    <!-- =========== Banner =========== -->
 
     <div class="banner">
       <div class="banner__background-1">
-        <div class="banner__photo-wrap">
-          <img
-            class="banner__photo"
-            src="./image/photo_banner.jpg"
-            alt="Фото часов"
-          />
-        </div>
+        <img
+          class="banner__photo"
+          src="./image/photo_banner.jpg"
+          alt="Фото часов"
+        />
       </div>
 
       <div class="banner__background-2">
@@ -154,14 +162,15 @@
         </div>
 
         <div class="banner__pagination">
-          <div class="arrow"></div>
+          <a href="#" class="arrow"></a>
           <div class="banner__number">01</div>
-          <div class="arrow arrow_right"></div>
+          <a href="#" class="arrow arrow_right"></a>
         </div>
       </div>
     </div>
 
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- =========== Subscribe =========== -->
+
     <div class="subscribe">
       <div class="subscribe__group">
         <h2 class="subscribe__header">Следите за нашими новостями</h2>
@@ -189,16 +198,14 @@
       </div>
       <div class="subscribe__photo-group">
         <div class="subscribe__photo-first">
-          <div>
+          <div class="subscribe__photo-background">
             <img
-              class="subscribe__photo-1"
               src="./image/photo_1.jpg"
               alt="Фото часов на руке"
             />
           </div>
-          <div>
+          <div class="subscribe__photo-background">
             <img
-              class="subscribe__photo-2"
               src="./image/photo_2.jpg"
               alt="Фото часов"
             />
@@ -212,36 +219,40 @@
 
     <!--++++++++++++++++++++++++++++++++++++++++++-->
 
-    <div class="footer">
-      <div>
-        <div class="footer__logo">
-          <object type="image/svg+xml" data="./image/logo.svg">
-            Ваш браузер не поддерживает SVG
-          </object>
+    <div class="footer-wrap column">
+      <div class="footer">
+        <div class="column">
+          <div class="footer__logo">
+            <object type="image/svg+xml" data="./image/logo-2.svg">
+              Ваш браузер не поддерживает SVG
+            </object>
+            <div class="logo__text logo__text_footer">CONQUEST</div>
+          </div>
+          <a href="tel:84994504797">8 (499) 450-47-97</a>
+          <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
         </div>
-        <a href="tel:84994504797">8 (499) 450-47-97</a>
-        <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
-      </div>
-      <div class="about">
-        <h4>О компании</h4>
-        <a href="/">Наши магазины</a>
-        <a href="/">Вакансии</a>
-        <a href="/">Сертификаты</a>
-        <a href="/">Отзывы</a>
-      </div>
-      <div class="for-buyers">
-        <h4>Покупателям</h4>
-        <a href="/">Каталог товаров</a>
-        <a href="/">Как заказать?</a>
-        <a href="/">FAQ</a>
-        <a href="/">Корпоративным клиентам</a>
-      </div>
-      <div>
-        <h4>Оплата и доставка</h4>
-        <a href="/">Способы оплаты</a>
-        <a href="/">Время доставки</a>
-        <a href="/">Гарантии и ремонт</a>
-        <a href="/">Возврат и компенсация</a>
+        <div class="about column">
+          <h4>О компании</h4>
+          <a href="/">Наши магазины</a>
+          <a href="/">Вакансии</a>
+          <a href="/">Сертификаты</a>
+          <a href="/">Отзывы</a>
+        </div>
+
+        <div class="for-buyers column">
+          <h4>Покупателям</h4>
+          <a href="/">Каталог товаров</a>
+          <a href="/">Как заказать?</a>
+          <a href="/">FAQ</a>
+          <a href="/">Корпоративным клиентам</a>
+        </div>
+        <div class="column">
+          <h4>Оплата и доставка</h4>
+          <a href="/">Способы оплаты</a>
+          <a href="/">Время доставки</a>
+          <a href="/">Гарантии и ремонт</a>
+          <a href="/">Возврат и компенсация</a>
+        </div>
       </div>
     </div>
   </body>

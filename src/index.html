@@ -14,42 +14,42 @@
     <!-- =========== Header =========== -->
 
     <header class="header container">
-      <div class="header__logo">
+      <a class="header__logo" href="">
         <object type="image/svg+xml" data="./image/logo-1.svg">
           Ваш браузер не поддерживает SVG
         </object>
         <div class="logo__text logo__text_header">CONQUEST</div>
-      </div>
+      </a>
       <nav>
         <input id="menu__toggle" class="menu__toggle" type="checkbox" />
         <label class="menu__btn" for="menu__toggle"><span> </span></label>
 
         <ul class="header__menu menu__box">
-          <li><a class="menu__item" href="/">Каталог</a></li>
-          <li><a class="menu__item" href="/">Акции</a></li>
-          <li><a class="menu__item" href="/">Доставка</a></li>
-          <li><a class="menu__item" href="/">Контакты</a></li>
+          <li><a class="menu__item" href="">Каталог</a></li>
+          <li><a class="menu__item" href="">Акции</a></li>
+          <li><a class="menu__item" href="">Доставка</a></li>
+          <li><a class="menu__item" href="">Контакты</a></li>
         </ul>
       </nav>
       <div class="header__icons-group">
-        <div>
+        <a class="icon" href="">
           <svg class="header__icon">
             <use xlink:href="./image/sprite.svg#loupe"></use>
           </svg>
-        </div>
-        <div class="header__heart-group">
+        </a>
+        <a class="icon header__heart-group" href="">
           <div class="header__like">
             <div>1</div>
           </div>
           <svg class="header__icon">
             <use xlink:href="./image/sprite.svg#heart"></use>
           </svg>
-        </div>
-        <div>
+        </a>
+        <a class="icon" href="">
           <svg class="header__icon">
             <use xlink:href="./image/sprite.svg#cart"></use>
           </svg>
-        </div>
+        </a>
       </div>
     </header>
 
@@ -69,7 +69,7 @@
             Швейцарские часы в наличии в Москве <br />
             и с доставкой по всему миру
           </div>
-          <a class="button" href="/">Смотреть каталог</a>
+          <a class="button" href="">Смотреть каталог</a>
         </div>
         <div class="ellipse-main">
           <img class="watch-main" src="./image/watch_main.png" alt="Часы" />
@@ -90,7 +90,7 @@
 
     <div class="products container">
       <h2 class="products__header">Популярные модели</h2>
-      <div class="see-all">Смотреть все</div>
+      <a class="see-all" href="">Смотреть все</a>
       <div class="products__watches">
         <div class="products__card">
           <h3>RADO</h3>
@@ -104,7 +104,7 @@
           </div>
           <div class="more-group">
             <div class="line line_sm"></div>
-            <div class="more">Подробнее</div>
+            <a class="more" href="">Подробнее</a>
           </div>
         </div>
         <div class="products__card">
@@ -119,7 +119,7 @@
           </div>
           <div class="more-group">
             <div class="line line_sm"></div>
-            <div class="more">Подробнее</div>
+            <a class="more" href="">Подробнее</a>
           </div>
         </div>
         <div class="products__card">
@@ -134,7 +134,7 @@
           </div>
           <div class="more-group">
             <div class="line line_sm"></div>
-            <div class="more">Подробнее</div>
+            <a class="more" href="">Подробнее</a>
           </div>
         </div>
       </div>
@@ -152,20 +152,25 @@
       </div>
 
       <div class="banner__background-2">
+        <div class="banner__pagination-wrap">
+          <div class="banner__pagination">
+            <a href="" class="arrow"></a>
+            <div class="banner__number">01</div>
+            <a href="" class="arrow arrow_right"></a>
+          </div>
+        </div>
+
         <div class="banner__group">
           <h2 class="banner__header">Подлинное качество</h2>
           <p class="banner__descript">
             Все часы производятся в Швейцарии и имеют сертификаты качества.
             Настоящие швейцарские часы — это предмет гордости и престижа.
           </p>
-          <a class="button button_banner">СМОТРЕТЬ КАТАЛОГ</a>
+          <a class="button button_banner" href="">СМОТРЕТЬ КАТАЛОГ</a>
         </div>
 
-        <div class="banner__pagination">
-          <a href="#" class="arrow"></a>
-          <div class="banner__number">01</div>
-          <a href="#" class="arrow arrow_right"></a>
-        </div>
+        <div class="banner__lines banner__lines-1"></div>
+        <div class="banner__lines banner__lines-2"></div>
       </div>
     </div>
 
@@ -179,36 +184,30 @@
           новинках и акциях первыми.
         </p>
         <div class="socials">
-          <div class="instagram">
+          <a class="icon instagram" href="">
             <svg class="socials-icon">
               <use xlink:href="./image/sprite.svg#instagram"></use>
             </svg>
-          </div>
-          <div class="facebook">
+          </a>
+          <a class="icon facebook" href="">
             <svg class="socials-icon">
               <use xlink:href="./image/sprite.svg#facebook"></use>
             </svg>
-          </div>
-          <div class="twitter">
+          </a>
+          <a class="icon twitter" href="">
             <svg class="socials-icon">
               <use xlink:href="./image/sprite.svg#twitter"></use>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
       <div class="subscribe__photo-group">
         <div class="subscribe__photo-first">
           <div class="subscribe__photo-background">
-            <img
-              src="./image/photo_1.jpg"
-              alt="Фото часов на руке"
-            />
+            <img src="./image/photo_1.jpg" alt="Фото часов на руке" />
           </div>
           <div class="subscribe__photo-background">
-            <img
-              src="./image/photo_2.jpg"
-              alt="Фото часов"
-            />
+            <img src="./image/photo_2.jpg" alt="Фото часов" />
           </div>
         </div>
         <div class="subscribe__photo-3">
@@ -217,41 +216,41 @@
       </div>
     </div>
 
-    <!--++++++++++++++++++++++++++++++++++++++++++-->
+    <!-- =========== Footer =========== -->
 
     <div class="footer-wrap column">
       <div class="footer">
         <div class="column">
-          <div class="footer__logo">
+          <a class="footer__logo" href="">
             <object type="image/svg+xml" data="./image/logo-2.svg">
               Ваш браузер не поддерживает SVG
             </object>
             <div class="logo__text logo__text_footer">CONQUEST</div>
-          </div>
+          </a>
           <a href="tel:84994504797">8 (499) 450-47-97</a>
           <a href="email:info@conquest.watch.ru">info@conquest.watch.ru</a>
         </div>
         <div class="about column">
           <h4>О компании</h4>
-          <a href="/">Наши магазины</a>
-          <a href="/">Вакансии</a>
-          <a href="/">Сертификаты</a>
-          <a href="/">Отзывы</a>
+          <a href="">Наши магазины</a>
+          <a href="">Вакансии</a>
+          <a href="">Сертификаты</a>
+          <a href="">Отзывы</a>
         </div>
 
         <div class="for-buyers column">
           <h4>Покупателям</h4>
-          <a href="/">Каталог товаров</a>
-          <a href="/">Как заказать?</a>
-          <a href="/">FAQ</a>
-          <a href="/">Корпоративным клиентам</a>
+          <a href="">Каталог товаров</a>
+          <a href="">Как заказать?</a>
+          <a href="">FAQ</a>
+          <a href="">Корпоративным клиентам</a>
         </div>
         <div class="column">
           <h4>Оплата и доставка</h4>
-          <a href="/">Способы оплаты</a>
-          <a href="/">Время доставки</a>
-          <a href="/">Гарантии и ремонт</a>
-          <a href="/">Возврат и компенсация</a>
+          <a href="">Способы оплаты</a>
+          <a href="">Время доставки</a>
+          <a href="">Гарантии и ремонт</a>
+          <a href="">Возврат и компенсация</a>
         </div>
       </div>
     </div>

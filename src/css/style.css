@@ -734,6 +734,7 @@ ul[class] {
 .banner__pagination {
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .arrow {
@@ -788,6 +789,7 @@ ul[class] {
 .button_banner {
   background: #d4b098;
   margin-bottom: 6.875rem;
+  z-index: 1;
 }
 
 .banner__lines {
